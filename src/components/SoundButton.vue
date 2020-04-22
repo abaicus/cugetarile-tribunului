@@ -1,11 +1,11 @@
 <template>
     <v-item-group :style="{display: 'flex'}">
-        <v-btn class="play" :style="{flexGrow: 1}" large depressed block @click="playing ? pause() : play()"
+        <v-btn class="play" large depressed block @click="playing ? pause() : play()"
                :color=" playing ? 'error' : 'info'">
             <v-icon v-if="playing">pause</v-icon>
             <span v-else>{{sound.title}}</span>
         </v-btn>
-        <v-btn class="copy" :style="{flexGrow: 0}" large depressed block v-clipboard="copy" v-clipboard:success="copied"
+        <v-btn class="copy" large depressed block v-clipboard="copy" v-clipboard:success="copied"
                :color="wasCopied ? 'success' : null">
             <v-icon>{{wasCopied ? 'check' : 'content_copy' }}</v-icon>
         </v-btn>
@@ -92,11 +92,14 @@
     .play {
         border-top-right-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
+        flex-grow: 1;
     }
 
     .copy {
         margin-left: -1px;
         border-top-left-radius: 0 !important;
         border-bottom-left-radius: 0 !important;
+        width: auto;
+        flex-grow: 0;
     }
 </style>
