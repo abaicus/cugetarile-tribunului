@@ -2,7 +2,7 @@
 	<div>
 		<v-container fluid grid-list-lg>
 			<v-layout wrap justify-center >
-				<v-flex xs12 sm4 md12 lg4 xl4
+				<v-flex xs12 sm12 md6 lg4 xl4
 						v-for="(sound, index) in sounds" :key="index">
 					<sound-button :sound="sound" :index="index"/>
 				</v-flex>

@@ -12,4 +12,5 @@ git add *
 git commit -m "Deploy"
 git push
 cd -
+rm -rf dist
 rm -rf ../dist
