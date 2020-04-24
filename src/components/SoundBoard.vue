@@ -122,6 +122,31 @@
 					title: 'Vita incaltata',
 					sound: 'vita.mp3',
 					playing: false
+				},
+				{
+					title: 'Marian',
+					sound: 'marian.mp3',
+					playing: false
+				},
+				{
+					title: 'Il bag in pizda ma-sii',
+					sound: 'il_bag_in.mp3',
+					playing: false
+				},
+				{
+					title: 'Ma-sa de handicapat',
+					sound: 'il_bag_in_masa_de_handicapat.mp3',
+					playing: false
+				},
+				{
+					title: 'Hai mai repede',
+					sound: 'hai_mai_repede.mp3',
+					playing: false
+				},
+				{
+					title: 'Te-ai nascut chiar asa',
+					sound: 'teai_nascut_chiar_asa.mp3',
+					playing: false
 				}
 			]
 		} )
